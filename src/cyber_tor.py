@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Cyber Tor Professional v11.0 - Authorized Security Assessment & Defensive Security Suite."""
+"""Cyber Tor Professional v11.1.0 - Authorized Security Assessment & Defensive Security Suite."""
 import argparse, hashlib, html, ipaddress, json, math, re, shutil, socket, ssl, os
 import subprocess, sys, time, urllib.error, urllib.parse, urllib.request
 from datetime import datetime, timezone
@@ -13,7 +13,7 @@ REPORTS = BASE / "reports"
 TIMEOUT = 8
 MAX_REQUESTS = 50
 MIN_DELAY = 0.20
-UA = "Cyber-Tor/11.0 (Authorized Defensive Assessment)"
+UA = "Cyber-Tor/11.1.0 (Authorized Defensive Assessment)"
 
 from enterprise_engine import tls_posture, web_posture, security_txt, compliance_map, evidence_manifest, executive_posture
 from pentest_engine import run_deep_web_pentest
