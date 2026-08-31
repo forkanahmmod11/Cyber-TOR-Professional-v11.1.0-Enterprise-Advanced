@@ -321,7 +321,7 @@ class H(BaseHTTPRequestHandler):
             if module not in allowed or not target:return self.sendx(400,'Invalid assessment request')
             if not scope:
                 return self.sendx(400,'Authorized scope is required for network assessments. Enter the authorized hostname, wildcard, CIDR, or a comma-separated list.')
-            import subprocess, re
+            import subprocess
             scope_entries=[x.strip() for x in scope.split(',') if x.strip()]
             if not scope_entries:
                 return self.sendx(400,'Authorized scope is required for network assessments.')
